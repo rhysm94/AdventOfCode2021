@@ -5,13 +5,20 @@ import PackageDescription
 
 let package = Package(
     name: "AdventOfCode2021",
-	defaultLocalization: LanguageTag("en"),
+	platforms: [.macOS(.v11)],
     products: [
-		.executable(name: "Day1", targets: ["Day1"])
+		.executable(name: "Day1", targets: ["Day1"]),
+		.executable(name: "Day2", targets: ["Day2"])
     ],
     targets: [
 		.executableTarget(
 			name: "Day1",
+			resources: [
+				.copy("input.txt")
+			]
+		),
+		.executableTarget(
+			name: "Day2",
 			resources: [
 				.copy("input.txt")
 			]
@@ -22,6 +29,7 @@ let package = Package(
 			resources: [
 				.copy("Part1Sample.txt")
 			]
-		)
+		),
+		.testTarget(name: "Day2Tests", dependencies: ["Day2"])
     ]
 )
