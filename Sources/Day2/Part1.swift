@@ -23,9 +23,7 @@ extension Position {
 }
 
 func part1(input: [Movement]) -> Int {
-	let position = input.reduce(into: Position.zero) { position, movement in
+	input.reduce(into: Position.zero) { position, movement in
 		position.update(with: movement)
-	}
-
-	return position.courseLength
+	}.courseLength
 }

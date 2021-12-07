@@ -30,6 +30,6 @@ let package = Package(
 				.copy("Part1Sample.txt")
 			]
 		),
-		.testTarget(name: "Day2Tests", dependencies: ["Day2"])
+//		.testTarget(name: "Day2Tests", dependencies: ["Day2"])
     ]
 )

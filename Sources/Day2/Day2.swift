@@ -8,8 +8,8 @@
 import Foundation
 
 @main
-struct Day2 {
-	static func main() throws {
+public struct Day2 {
+	public static func main() throws {
 		guard let url = Bundle.module.url(forResource: "input", withExtension: "txt") else {
 			return
 		}
@@ -18,6 +18,7 @@ struct Day2 {
 			.split(separator: "\n")
 			.compactMap(Movement.init)
 
-		print(input.count)
+		print(" - Day 2 - ")
+		print("Part 1: Planned Course is \(part1(input: input)) movenents")
 	}
 }
