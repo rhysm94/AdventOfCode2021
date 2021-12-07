@@ -1,5 +1,5 @@
 //
-//  Direction.swift
+//  Movement.swift
 //  Day 2 - Advent of Code 2021
 //
 //  Created by Rhys Morgan on 07/12/2021.

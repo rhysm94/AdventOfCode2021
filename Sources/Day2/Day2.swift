@@ -20,5 +20,7 @@ public struct Day2 {
 
 		print(" - Day 2 - ")
 		print("Part 1: Planned Course is \(part1(input: input)) movenents")
+		print("Part 2: Planned Course is \(part2(input: input)) movenents")
+
 	}
 }

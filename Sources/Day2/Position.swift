@@ -10,6 +10,7 @@ import Foundation
 struct Position {
 	var horizontal: Int
 	var depth: Int
+	var aim: Int
 
-	static let zero = Position(horizontal: 0, depth: 0)
+	static let zero = Position(horizontal: 0, depth: 0, aim: 0)
 }
