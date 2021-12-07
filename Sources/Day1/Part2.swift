@@ -10,7 +10,7 @@ import Foundation
 func windows<S: Sequence>(_ sequence: S) -> [S.Element] where S.Element == Int {
 	zip(sequence, zip(sequence.dropFirst(), sequence.dropFirst(2)))
 		.map { a, bc in
-			return a + bc.0 + bc.1
+			a + bc.0 + bc.1
 		}
 }
 
