@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "AdventOfCode2021",
+	defaultLocalization: LanguageTag("en"),
     products: [
 		.executable(name: "Day1", targets: ["Day1"])
     ],
