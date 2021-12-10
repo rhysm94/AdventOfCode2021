@@ -15,8 +15,6 @@ func part1<S: StringProtocol>(input: [S]) -> UInt {
 		valueCount.zeroes > valueCount.ones ? "0" : "1"
 	})
 
-	print("Gamma String: \(gammaString)")
-
 	guard let gammaRate = UInt(gammaString, radix: 2) else {
 		fatalError("Couldn't convert to a gammaRate")
 	}
