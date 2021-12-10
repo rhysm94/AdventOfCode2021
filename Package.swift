@@ -8,7 +8,8 @@ let package = Package(
 	platforms: [.macOS(.v11)],
     products: [
 		.executable(name: "Day1", targets: ["Day1"]),
-		.executable(name: "Day2", targets: ["Day2"])
+		.executable(name: "Day2", targets: ["Day2"]),
+
     ],
     targets: [
 		.executableTarget(
@@ -23,6 +24,7 @@ let package = Package(
 				.copy("input.txt")
 			]
 		),
+		.executableTarget(name: "Day3", resources: [.copy("input.txt")]),
 		.testTarget(
 			name: "Day1Tests",
 			dependencies: ["Day1"],
@@ -30,6 +32,9 @@ let package = Package(
 				.copy("Part1Sample.txt")
 			]
 		),
-//		.testTarget(name: "Day2Tests", dependencies: ["Day2"])
+		.testTarget(
+			name: "Day2Tests",
+			dependencies: ["Day2"]
+		)
     ]
 )
