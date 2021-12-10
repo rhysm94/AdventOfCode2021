@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  
+//  Day3.swift
+//  Advent of Code 2021
 //
 //  Created by Rhys Morgan on 10/12/2021.
 //
@@ -15,7 +15,6 @@ struct Day3 {
 		}
 
 		let input = try String(contentsOf: inputURL).split(separator: "\n")
-		print(input)
 
 		let part1Result = part1(input: input)
 
